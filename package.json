@@ -1,6 +1,6 @@
 {
-  "name": "ts-node-dev",
-  "version": "1.0.0",
+  "name": "@sytten/ts-node-dev",
+  "version": "1.0.1",
   "description": "Compiles your TS app and restarts when files are modified.",
   "keywords": [
     "restart",
@@ -32,6 +32,7 @@
     "node": ">=0.8.0"
   },
   "scripts": {
+    "build": "tsc --build tsconfig.build.json",
     "ts-node-dev": "node ./lib/bin",
     "tsnd": "yarn ts-node-dev",
     "test": "ts-node -T node_modules/mocha/bin/mocha test/*.test.ts",
